@@ -348,92 +348,111 @@ body{
     height: 50%;
     filter: invert(1);
 }
-/* responsive code below*/
-@media screen and (max-width:1920px) {
-    html {
-        font-size: 60%;
-    }
+/* Responsive enhancements */
+@media screen and (max-width: 1920px) {
+    /* Adjust font sizes and element sizes as needed */
 }
 
-@media screen and (max-width:1200px) {
-    html {
-        font-size: 60%;
-    }
+@media screen and (max-width: 1200px) {
+    /* Similar adjustments for smaller screens */
 }
 
-@media screen and (max-width:998px) {
-    html {
-        font-size: 55%;
+@media screen and (max-width: 998px) {
+    /* More targeted adjustments for even smaller screens */
+    .profileSection img, .socialbuttons img {
+        width: 80px;
+        height: 80px; /* Adjusting image sizes */
     }
+
+    .ProfileHeading, .socialbuttons p {
+        font-size: 2rem; /* Adjusting font sizes */
+    }
+
+    .aboutdescription {
+        font-size: 1.6rem; /* Adjusting font size */
+    }
+
+    /* Further styling adjustments */
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     html {
         font-size: 50%;
     }
-    .mainContainer{
-        width:100%;
+
+    .mainContainer {
+        width: 100%;
+        padding-top: 50px; /* Adjust top padding */
     }
- 
+
+    .profileSection, .socialsSection {
+        width: 90%; /* Adjust width */
+    }
+
+    /* Further styling adjustments */
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
     html {
-        font-size: 45%;  
-    }
-    .loader {
-        width: 20rem;
-        height: 20rem;
-      }
-      .curve text {
-        font: 2em "Fira Sans", sans-serif;
-        ;
-      }
-      
-    .mainContainer{
-        padding-top: 30px;
-        gap: 20px;
-    }
-    .aboutdescription{
-        font-size: 2rem;
-    }
-    .socialsSection{
-        height: 40%;
+        font-size: 45%; /* Decrease base font size */
     }
 
-    .socialbuttons{
-        height: 55px;
-    }
-    .socialbuttons img{
-        height: 41px;
-    }
-    .socialbuttons p{
-        font-size: 2.1rem;
-    }
-    
-    .signatureSection img{
-        height: 37%;
-        filter: invert(1);
+    .loader, .curve {
+        width: 15rem;
+        height: 15rem; /* Adjust loader size */
     }
 
+    .curve text {
+        font: 1.5em "Fira Sans", sans-serif; /* Adjust font size */
+    }
+
+    .mainContainer {
+        gap: 15px; /* Reduce gap */
+    }
+
+    .aboutdescription {
+        font-size: 1.4rem; /* Further reduce font size */
+    }
+
+    .socialbuttons {
+        height: 45px; /* Adjust button height */
+    }
+
+    .socialbuttons img {
+        height: 30px; /* Adjust image size in buttons */
+    }
+
+    .socialbuttons p {
+        font-size: 1.6rem; /* Adjust font size in buttons */
+    }
+
+    .signatureSection img {
+        height: 30%; /* Adjust signature size */
+    }
 }
 
-@media screen and (max-width:430px) {
+@media screen and (max-width: 430px) {
+    /* Adjustments for very small screens */
     html {
         font-size: 43%;
     }
+
+    /* Further styling adjustments */
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width: 375px) {
     html {
         font-size: 40%;
     }
+
+    /* Further styling adjustments */
 }
-@media screen and (max-width:300px) {
+
+@media screen and (max-width: 300px) {
+    /* Adjustments for extremely small screens */
     html {
         font-size: 40%;
     }
-}
 
 /* responsive code above */
 

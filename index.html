@@ -1,92 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#000">
-    <meta name="description" content="Tony" >
-    <meta name="author" content="Tony" >
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000" />
+    <meta name="description" content="Tony" />
+    <meta name="author" content="Tony" />
     <title>Tony Mumu | Social App</title>
-    <link rel="icon" type="image/x-icon" href="./Images/Profile.jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./Images/Profile.jpg" />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <div class="preloader" id="preloader">
         <div class="loader">
             <div class="blackhole">
-              <div class="blackhole-circle"></div>
-              <div class="blackhole-disc"></div>
+                <div class="blackhole-circle"></div>
+                <div class="blackhole-disc"></div>
             </div>
-          
             <div class="curve">
-              <svg viewBox="0 0 500 500">
-                <path id="loading" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"></path>
-                <text width="500">
-                  <textPath xlink:href="#loading">
-                    loading...
-                  </textPath>
-                </text>
-              </svg>
+                <svg viewBox="0 0 500 500">
+                    <path id="loading" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"></path>
+                    <text width="500">
+                        <textPath xlink:href="#loading">loading...</textPath>
+                    </text>
+                </svg>
             </div>
-          </div>
+        </div>
     </div>
     <div class="BigdaddyContainer">
         <div class="bg" id="bg"></div>
         <div class="mainContainer">
             <div class="profileSection">
-                <img src="./Images/Profile.jpg" alt="">
+                <img src="./Images/Profile.jpg" alt="Profile" />
                 <h1 class="ProfileHeading">@Tonymumu</h1>
-                <p class="aboutdescription">关注我 @一米七的托尼贾塔克 不定时更新更多IT、3C产品以及电影资讯!
-                    <br> 
-                    <br>
-                     Ns🥦 MDM 🍷Distributor
+                <p class="aboutdescription">
+                    关注我 @三界探險家 不定时更新更多IT、3C产品以及电影资讯!
+                    <br />
+                    <br />
+                    Ns🥦 MDM 🍷Distributor
                 </p>
             </div>
             <div class="socialsSection">
+                <!-- Social Links -->
                 <a href="https://tonymumu.vercel.app/" target="_blank" class="portfolio socialbuttons">
-                    <img src="./Images/Profile.jpg" alt="">
+                    <img src="./Images/Profile.jpg" alt="Portfolio" />
                     <p class="buttonname">Portfolio</p>
                 </a>
-
-                <a href="https://www.instagram.com/mrtonyyam/" target="_blank" class="uiverse socialbuttons">
-                  <img src="./Images/non neon.png" alt="">
-                <p class="buttonname">Instagram</p>  
-              </a>
-              
-                <a href="https://api.whatsapp.com/send?phone=601123831228" target="_blank" class="github socialbuttons">
-                    <img src="./Images/—Pngtree—whatsapp mobile software icon_8704828.png" alt="">
-                 <p class="buttonname">Whatsapp</p>   
+                <a href="https://www.instagram.com/mrtonyyam/" target="_blank" class="instagram socialbuttons">
+                    <img src="./Images/non neon.png" alt="Instagram" />
+                    <p class="buttonname">Instagram</p>
                 </a>
-               
-                <a href="https://www.linkedin.com/in/vinod-jangid-b401111a1?original_referer=" class="linkdin socialbuttons" target="_blank">
-                    <img src="./Images/xiaohongshu-logo_brandlogos.net_lqrvy.png" alt="">
-                  <p class="buttonname">小红书</p>  
+                <a href="https://api.whatsapp.com/send?phone=601123831228" target="_blank"
+                    class="whatsapp socialbuttons">
+                    <img src="./Images/—Pngtree—whatsapp mobile software icon_8704828.png" alt="Whatsapp" />
+                    <p class="buttonname">Whatsapp</p>
+                </a>
+                <a href="https://www.xiaohongshu.com/user/profile/5f7673b50000000001000693" target="_blank"
+                    class="xiaohongshu socialbuttons">
+                    <img src="./Images/xiaohongshu-logo_brandlogos.net_lqrvy.png" alt="小红书" />
+                    <p class="buttonname">小红书</p>
                 </a>
             </div>
             <div class="signatureSection">
-                <img src="./Images/signature.png" alt="">
+                <img src="./Images/signature.png" alt="Signature" />
             </div>
         </div>
     </div>
+    <script src="./Scripts/index.js"></script>
+    <script src="./Scripts/main.js"></script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                loader.style.display = "none";
+            }, 3000);
+
+            document.addEventListener(
+                "contextmenu",
+                function (e) {
+                    if (e.target.nodeName === "IMG") {
+                        e.preventDefault();
+                    }
+                },
+                false
+            );
+        });
+    </script>
 </body>
-<script src="./Scripts/index.js"></script>
-<script src="./Scripts/main.js"></script>
-<script>
-    var loader = document.getElementById("preloader");
-    window.addEventListener("load", function () {
-    setTimeout(function() {
-        loader.style.display = "none";
-        }, 3000);
-  
-        document.addEventListener("contextmenu", function(e){
-  if (e.target.nodeName === "IMG") {
-      e.preventDefault();
-  }
-}, false);
 
-})
-
-</script>
 </html>
-
